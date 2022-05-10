@@ -1,0 +1,656 @@
+@charset "utf-8";
+
+*:focus {outline: 0}
+
+.fcPink		{color:#ff3f90 !important; }
+.bold		{font-weight:bold; }
+.fl {float: left;}
+.fr {float: right}
+/* ==========================================================================
+	스타일
+========================================================================== */
+
+/* margin  */
+.mt0 {margin-top:0 !important}
+.mt3 {margin-top:3px !important}
+.mt5 {margin-top:5px !important}
+.mt10 {margin-top:10px !important;}
+.mt20 {margin-top:20px !important;}
+.mr3 {margin-right:3px !important;}
+.mr5 {margin-right:5px !important;}
+.ml4 {margin-left:4px !important}
+.ml8 {margin-left:8px !important}
+.ml0 {margin-left:0 !important}
+.ml15 {margin-left:15px !important;}
+.ml20 {margin-left:20px !important;}
+.mb20 {margin-bottom:20px !important;}
+
+.errMsg {margin-top: 8px; padding-left: 20px; color: #dc354a; font-size: 12px; background: url('../imgs/admin/ico_error.png') 0 50% no-repeat;}
+.txtBox {padding: 20px; background: #f4f4f4}
+
+/* ==========================================================================
+	웹스퀘어 기본 스타일 초기회
+========================================================================== */
+
+.w2grid_tooltip {border-radius:3px; background-color:#76828e !important; padding:9px !important; line-height:15px !important}
+
+.cke_chrome {border: 1px solid #e6e6e6 !important; box-shadow: none !important;}
+
+.w2group {background: none}
+
+/* 폼 */
+
+.w2input,
+.w2textarea,
+.w2selectbox_native_select{padding: 0 10px; font-size: 14px; font-family:'nskr',-apple-system, "AppleSDGothicNeo", "Roboto", "Noto Sans KR", "Helvetica", sans-serif; border-color: #d3d3d3; transition: border-color .2s;  background:#fff; }
+/* .w2inputCalendar_divInput {padding: 0 14px; font-size: 14px; font-family:-apple-system, "AppleSDGothicNeo", "Roboto", "Noto Sans KR", "Helvetica", sans-serif; border-color: #d3d3d3; transition: border-color .2s;  background:#fff; } */
+
+.gridTitle .w2input,
+.gridTitle .w2selectbox_native_select,
+.gridTitle .w2inputCalendar_divInput { height:40px; }
+
+/* .w2inputCalendar_div {width: 140px;}
+.w2inputCalendar_divInput { width: 100% !important; height: 30px !important; padding: 0; text-align: center;}
+.w2inputCalendar_div_input {height: 30px !important;} */
+
+.w2input,
+.w2selectbox_native{width: 200px; max-width: 100%; height:30px;}
+.w2textarea {padding: 5px 10px; height: 100px;}
+.w2textarea:focus {border-color: #4d4d4d;}
+
+.w2input,
+.w2selectbox,.w2checkcombobox,.w2autoComplete,
+.w2upload .w2upload_input,
+.w2multiselect_table .w2multiselect_td{border:1px solid #e6e6e6; border-radius: 3px;}
+
+
+.w2input.full,
+.w2selectbox_native.full,
+.w2textarea.full,
+.w2selectbox.full {width: 100%; min-width: 0;}
+
+
+.w2input {background: #ffffff}
+.w2input.w2input_focus { border-color: #4d4d4d; background: #ffffff }
+.w2input.w2input_disabled,
+.w2input.w2input_readonly {color: #999999; background-color: #f6f6f6;}
+
+.w2checkbox .w2checkbox_item,
+.w2checkbox .w2checkbox_item input[type="checkbox"]{margin:0}
+.w2checkbox .w2checkbox_item input[type="checkbox"],
+.w2checkbox .w2checkbox_item label{vertical-align:middle}
+
+
+.w2radio {}
+.w2radio .w2radio_item {display:inline-block;}
+/* .w2radio .w2radio_item ~ .w2radio_item {margin-left: 100px} */
+.w2radio .w2radio_item input[type="radio"] {position: absolute; top: 0; left: 0; -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; filter: alpha(opacity=0); opacity: 0;}
+.w2radio .w2radio_item label {position: relative; display: inline-block; padding: 0 20px 0 28px; color: #4c4c4c; font-size: 14px;}
+.w2radio .w2radio_item label::after {position: absolute; left: 0; top: 0; width: 20px; height: 20px; background: url('../imgs/common/sp_radio.png') 0 0 no-repeat; content: ''; box-sizing:border-box; border-radius:10px; }
+.w2radio .w2radio_item input[type="radio"]:checked + label:after {background-position: -20px 0;}
+.w2radio.radiobox .w2radio_item {/* min-width: 120px */}
+.w2radio.radiobox.sm .w2radio_item {min-width: 100px}
+.w2radio.radiobox .w2radio_item:last-child {min-width: 0; }
+.w2radio.radiobox .w2radio_item:last-child label {padding-right: 0;}
+
+
+.w2checkbox .w2radio_item label.w2checkbox_disabled {color: #999999}
+.w2radio + .w2upload {margin-left: 20px}
+
+.w2checkbox {}
+.w2checkbox .w2checkbox_item {display:inline-block;}
+/* .w2checkbox .w2checkbox_item ~ .w2checkbox_item {margin-left: 100px} */
+.w2checkbox .w2checkbox_item input[type="checkbox"] {position: absolute; top: 0; left: 0; -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; filter: alpha(opacity=0); opacity: 0;}
+.w2checkbox .w2checkbox_item label {position: relative; display: inline-block; padding: 0 20px 0 28px; color: #4c4c4c; font-size: 14px;}
+.w2checkbox .w2checkbox_item label::after {position: absolute; left: 0; top: 0; width: 20px; height: 20px; background: url('../imgs/common/sp_check.png') 0 0 no-repeat; content: ''; box-sizing:border-box; }
+.w2checkbox .w2checkbox_item input[type="checkbox"]:checked + label:after {background-position: -20px 0;}
+.w2checkbox.checkbox .w2checkbox_item {/* min-width: 120px */}
+.w2checkbox.checkbox .w2checkbox_item:last-child {min-width: 0;}
+.w2checkbox.checkbox .w2checkbox_item:last-child label {padding-right: 0;}
+.w2checkbox .w2checkbox_item label.w2checkbox_disabled {color: #999999} /* 비활성화*/
+
+
+.w2selectbox_native {min-width: 50px; border: 0;}
+.w2selectbox_native.auto {min-width: 0; width: auto}
+.w2selectbox_native_select {height: 30px; padding: 0 0 0 10px; border: 1px solid #ccc; border-radius:3px}
+.w2selectbox_native_select:focus {border-color: #4d4d4d}
+.w2selectbox_native.w2selectbox_disabled {color: #999999; background: #f7f7f7;}
+.w2selectbox_native.w2selectbox_disabled .w2selectbox_native_select {border-color: #e5e5e5;}
+
+
+/* 파일 업로드 */
+.w2upload {position: relative; width: 190px; height:30px !important}
+.w2upload .w2upload_image {position: absolute; right: 0; top: 0; margin-left:0; width:30px; height:30px; background: url(../imgs/common/btn_upload.png) no-repeat; }
+.w2upload .w2upload_input {height:30px; background: #ffffff}
+.w2upload .w2upload_image_over {background-image: url(../imgs/common/btn_upload_over.png); cursor:pointer}
+.w2upload_disabled .w2upload_input {background-color:#f6f6f6 !important}
+.w2upload_disabled .w2upload_image {background-image: url(../imgs/common/btn_upload_disa.png); width:30px;margin-left:0;top:0;height:30px;}
+
+
+.w2modal,
+.w2modal_popup { background-color: #000000; filter: alpha(opacity = 70); opacity: .7;}
+.w2window_restored,
+.w2modal_restored {position: fixed;}
+.w2window {min-width: 460px; padding-top: 50px; background-color: #fff; border: 1px solid #e6e6e6; }
+.w2window .w2window_header {height: 50px; margin: 0; padding: 0 15px; background: #f3f3f3; border-bottom: 1px solid #e6e6e6}
+.w2window .w2window_header .w2window_header_icon{display:none}
+.w2window .w2window_header_title {position: relative; left: 0; width: auto; height: auto; padding: 11px 0; font-size: 18px; font-weight: normal; color: #1f1f1f;}
+.w2window .w2window_body {position: static; top: 0; height: 100%; padding: 0; overflow-x:hidden; background: #ffffff; border: 0;}
+.w2window .w2window_content {position: relative; left: auto; top: auto; bottom: auto; right: auto; margin: 0; padding: 40px; border: 0}
+.w2window .w2window_header_control { position: absolute; top: 50%; right: 0; width: auto; height: 22px; margin-top: -11px; }
+.w2window .w2window_close { position: absolute; top: 0; right: 15px; left: auto;  width: 22px; height: 22px; background: url('../imgs/common/ico_pop_close.png') center center no-repeat; cursor: pointer; }
+.w2window .w2window_wframe {height: auto;}
+
+/* 드레그 그리드 */
+.gridBox.bnrSorting {margin-top:10px; }
+.gridBox.bnrSorting .gridView thead .gridHeaderTDDefault {display:none; }
+.gridBox.bnrSorting .gridView td.bnrTit {text-align:left; padding-left:10px; }
+.gridBox.bnrSorting .gridView td.bgMove	{background:url(../imgs/common/ico_move.png) no-repeat 98% 50%; }
+
+
+
+.gridFooterTableDefault {border:1px solid #e0e0e0;}
+.gridFooterTDDefault {background:#e0e0e0; color:#000; padding:10px; height:45px; border:0;font-size:16px; }
+
+
+/* 탭 */
+.w2tabcontrol {overflow: hidden}
+.w2tabcontrol_tabhost:after {display: block; clear:both; content: '';}
+.w2tabcontrol_tabhost .w2tabcontrol_tab_center,
+.w2tabcontrol_tabhost .w2tabcontrol_tab_left,
+.w2tabcontrol_tabhost .w2tabcontrol_tab_right,
+.w2tabcontrol_tabhost .w2tabcontrol_active .w2tabcontrol_tab_center,
+.w2tabcontrol_tabhost .w2tabcontrol_active .w2tabcontrol_tab_left,
+.w2tabcontrol_tabhost .w2tabcontrol_active .w2tabcontrol_tab_right,
+.w2tabcontrol_tabhost .w2tabcontrol_over .w2tabcontrol_tab_center,
+.w2tabcontrol_tabhost .w2tabcontrol_over .w2tabcontrol_tab_left,
+.w2tabcontrol_tabhost .w2tabcontrol_over .w2tabcontrol_tab_right{background:none; }
+.w2tabcontrol_tabhost {width: 100%; height: 50px; text-align: center; border: 1px solid #c7c4d7;}
+.w2tabcontrol_tabhost li {margin:0; }
+.w2tabcontrol_tabhost li a { position: relative; top: 0px; padding: 18px 0; margin-right:0;	margin-left:0; font-weight:normal;}
+.w2tabcontrol_tabhost a {display:block; min-width:100%; position: relative; color: #8a8a8a; font-size: 16px; border-left: 1px solid #c5c6db;}
+.w2tabcontrol_tabhost a:hover {text-decoration: none}
+.w2tabcontrol_tabhost .w2tabcontrol_li:first-child a {border-left: 0;}
+.w2tabcontrol_tabhost .w2tabcontrol_active a{position: relative; z-index: 1; margin: -1px 0; color: #fff; background-color: #313366;}
+.w2tabcontrol_tabhost .w2tabcontrol_active a::after {content: ''; position: absolute; left: 0; top: 0; width: 100%; height: 100%; margin: -1px; background: transparent; border: 1px solid #313366; }
+.w2tabcontrol_container {margin-top: 20px; border: 0}
+
+.w2tabcontrol.autoHeight .w2tabcontrol_container {height: auto !important;}
+
+.editorFile			{border-top:1px solid #c5c6db; padding:10px;  }
+
+
+.w2inputCalendar_div {position: relative; width: 140px; height:30px; border: 1px solid #dbdbdb; border-radius: 2px; background-color: #ffffff;}
+.w2inputCalendar_div_img {position: absolute; right: 0; top: 0; width:34px; height: 28px; }
+.w2inputCalendar_button {top: 0 !important; background:url('../imgs/common/ico_cal.png') center center no-repeat !important; width:28px; height:28px}
+.w2inputCalendar_div_input {padding-right:0}
+.w2inputCalendar_divInput{width: 104px !important; height:28px !important; font: inherit; font-size: 14px; text-align: center; border: 0; background: none;}
+.w2inputCalendar_img_over {background:url('../imgs/common/ico_cal.png') center center no-repeat !important;}
+.w2inputCalendar_img_readOnly {background:url('../imgs/common/ico_cal.png') center center no-repeat !important;cursor:default}
+.w2inputCalendar_focus {border:0;}
+.w2inputCalendar_div .w2inputCalendar_focus {border:0; background-color: #f4f4f4;}
+.w2inputCalendar_readOnly  {border: 1px solid #d3dbe3; background:#ebeced !important; color:#b4bbc2; cursor:default}
+.w2inputCalendar_readOnly.w2inputCalendar_divInput {border: 1px solid #d3dbe3; background:#ebeced}
+.w2inputCalendar_div input:disabled{border:1px solid #d3dbe3;background:#ebeced !important;color:#b4bbc2;cursor:default}
+
+
+
+
+/* ==========================================================================
+	공통
+========================================================================== */
+
+.wrap {min-width: 1440px;}
+.lginWrap {min-width: 0;}
+.header {overflow: hidden; background: #fe6e3e url('../imgs/common/bg_top.png') 0 0 no-repeat;}
+.header .logo {float: left;}
+.header .logo a {display: block; width: 230px; height: 72px; background: url('../imgs/logo.png') 0 50% no-repeat;}
+.header .nav {float: left; margin-left: 30px; line-height: 1; font-size: 0;}
+.header .nav .navItem {display: inline-block; position: relative; padding: 36px 20px;}
+.header .nav .navItem a {display: block; color: #fff; font-family: 'LGSmHaR'; font-size: 18px;}
+.header .nav .navItem a::after {content: ''; display: none; position: absolute; right: 10px; bottom: 0; left: 10px; height: 4px; background: #ff3f90;}
+.header .nav .navItem.active a,
+.header .nav .navItem a:hover {color: #ffffff;}
+.header .nav .navItem.active a::after,
+.header .nav .navItem a:hover::after {display: block;}
+.header .userInfo {float: right; margin: 20px 50px 0 0;}
+.header .userInfo a {display: inline-block; text-align: center; color: #ffffff; font-family: 'LGSmHaR'; font-size: 14px;}
+.header .userInfo a ~ a {margin-left: 40px;}
+.header .btnLogout{width: 84px; padding: 8px 0; /*border: 1px solid #7a7a7a; */border-radius: 2px;}
+
+.aside {position: absolute; left:0; top:0; bottom:0; z-index: 10; width:230px; background:#f0f0f0;overflow:hidden}
+.menu .menuAnchor {display: block; position: relative; padding: 13px 30px;}
+.menu .hasChild .menuAnchor::after {content: ''; position: absolute; right: 32px; top: 50%; width: 12px; height: 12px; margin-top: -6px; background: url('../imgs/common/sp_amenu.png') 0 0 no-repeat;}
+.menu .menuAnchor:hover {background: #e0e0e0;}
+.menu .menuList > li {border-bottom :1px solid #d6d6d6;}
+.menu .menuList .subList {display: none; position: relative; padding: 0 10px; border-top: 1px solid #333333; background: #666666;}
+.menu .menuList .subList::after {content: ''; position: absolute; left: 0; top: 0; width: 100%; height: 3px; background: #4d4d4d;}
+.menu .menuList .subList li {padding: 13px 0; border-top: 1px solid #757575;}
+.menu .menuList .subList li:first-child {border: 0;}
+.menu .menuList .subList a {position: relative; padding-left: 32px; color: #d6d6d6;}
+.menu .menuList .subList a::after {content: ''; position: absolute; left: 15px; top: 50%; width: 12px; height: 12px; margin-top: -6px; background: url('../imgs/common/sp_smenu.png') 0 0 no-repeat;}
+.menu .menuList .subList a:hover {color: #ffffff;}
+.menu .menuList .subList a:hover::after {background-position: 0 -12px;}
+
+.menu .menuList .active .menuAnchor::after {background-position: 0 -12px;}
+.menu .menuList .active .subList {display: block}
+
+/* .content {position: relative; z-index: 1; padding: 0 0 0 230px;} */
+.content {position: absolute; top: 0; left: 230px; bottom: 0; right: 0; z-index: 1; }
+.content::before {content: ''; position: absolute; left: 0; top: 0; width: 230px; height: 100%; background: #f0f0f0;}
+.subContent {height: 100%; overflow-x: hidden; overflow-y: auto;}
+.subInner {min-width: 1200px; max-width: 1200px;padding: 22px 50px 50px;}
+.wfmViewer {display: none; position: absolute; top: 0; right: 0; bottom: 0; left: 0; z-index: 100; overflow-x: hidden; overflow-y: auto; background:#ffffff;}
+
+
+
+.pageTitle {position:relative; width:100%; padding: 22px 0;}
+.pageTitle .title {font-size: 24px;}
+.pageTitle .btnBox {position:absolute; right:0; top:30px; width:auto;}
+
+.sectionTitle {position: relative; min-height: 40px; margin: 40px 0 20px; padding-top: 10px;}
+.sectionTitle .title {display: inline-block;  font-size: 20px; font-weight:bold; vertical-align: middle }
+.sectionTitle input.editable		{border:0; height:32px; background:url(../imgs/common/ico_edit.png) no-repeat 98% 50%; }
+.sectionTitle input.editable + span	{margin-left:-30px; }
+.sectionTitle .info {margin-left: 30px; color: #999999; font-size: 16px;}
+.sectionTitle p.info {margin-left:0; margin-top: 5px;}
+.sectionTitle .util {position: absolute; right: 0; bottom: 0;}
+.sectionTitle .util .btn {margin-left:8px; }
+
+
+.searchBox {position: relative; padding: 25px 30px 120px; border: 1px solid #f0f0f0; background: #f7f7f7;}
+.searchBox::after {content:''; position: absolute; left: 30px; right: 30px; bottom: 95px; height: 1px; background: #ebebeb}
+.searchBox .w2input,
+.searchBox .w2selectbox_native {min-width: 80px}
+.searchBox .btnSrch {position: absolute; bottom: 25px; left: 50%; width: 160px; padding: 13px 0; margin-left: -50px; text-align: center; color: #ffffff; font-size: 14px; background: #2b2a63; border-radius: 2px;}
+.searchBox .btnSrch:before {content: ''; display: inline-block; vertical-align: middle; width: 18px; height: 18px; margin-right: 4px; background: url("../imgs/common/ico_srch.png") 0 0 no-repeat;}
+.searchBox .w2tb {table-layout:fixed; width: 100%; text-align: left; background: none}
+.searchBox .w2tb .w2tb_th,
+.searchBox .w2tb .w2tb_td {height: 30px; margin: 0; padding: 5px 0; border: 0; text-align: left; background: none;}
+.searchBox .w2tb .w2tb_th {padding-right: 20px; font-size: 15px; font-weight: normal; word-break: break-word}
+.searchBox .w2tb .w2tb_th .w2span {padding-left: 10px; background: url('../imgs/common/bul_square.png') left center no-repeat; }
+.searchBox .w2tb .w2tb_th.required .w2span::after {content: '*' display: inline; color: #ff3f90; font-size: 15px;}
+.searchBox .w2tb .w2tb_td {vertical-align: middle; padding-right: 30px;}
+
+.searchBox.inline {padding-right: 30px;}
+
+/* @media screen and (max-width: 1440px) {
+   .searchBox {display: none}
+
+}
+ */
+
+.gridBox {margin-top: 50px;}
+.sectionTitle + .gridBox {margin-top:35px;}
+
+.gridTitle {min-height: 40px}
+.gridTitle::after {display: block; clear: both; content: '';}
+.gridTitle .count {float: left; padding: 8px 0}
+.gridTitle .util {float: right;}
+.gridTitle .util .btn {margin-left:8px; }
+
+.gridTitle .tabFilter {float: left; padding: 8px 0; font-size: 0;}
+.gridTitle .tabFilter a {position: relative; padding: 0 11px 0 10px; font-size: 16px;}
+.gridTitle .tabFilter a:after {content: ''; position: absolute; right: 0; top: 50%; margin-top: -7px; width: 1px; height: 14px; background: #cccccc;}
+.gridTitle .tabFilter a:last-child:after {display: none}
+
+.gridBox .gridView {min-height: 336px; border: 1px solid #f0f0f0;}
+.w2window .gridBox .gridView {min-height: 200px; }
+.gridBox .gridView .gridHeaderTableDefault{border:0;}
+.gridBox .gridView .grid_body_row {background: #ffffff !important}
+.gridBox .gridView .gridBodyDefault a {}
+.gridBox .gridView .gridBodyDefault a:hover {text-decoration: underline;}
+.gridBox .gridView nobr {padding: 0;}
+.gridBox .gridView thead .gridHeaderTDDefault {position: relative; height: 52px; padding: 0 10px; color: #000000; font-size: 14px; vertical-align: middle; white-space: nowrap; background: #d8d7e0; border: 0; border-bottom: 1px solid #f0f0f0 }
+.gridBox .gridView thead .gridHeaderTDDefault::after {content: ''; position: absolute; left: 0; top: 50%; width: 1px; height: 22px; margin-top: -11px; background: #e7e6f0}
+.gridBox .gridView thead .gridHeaderTDDefault:first-child::after {display: none;}
+.gridBox .gridView tbody .gridBodyDefault {height: 45px; padding: 0; font-size: 14px; overflow: hidden; text-align: center; white-space: nowrap; text-overflow: ellipsis; border: 0; border-bottom: 1px solid #f0f0f0;}
+.gridBox .gridView tbody .gridBodyDefault.statusToday {background: #fff2f8;}
+.gridBox .gridView tbody .gridBodyDefault.statusOver {background: #ffd6e7}
+.gridBox .gridView tbody .gridBodyDefault.tal {padding-left: 10px;}
+.gridBox .gridView tbody .gridBodyDefault.btnDrag {background-image: url('../imgs/common/ico_grid_move.png'); background-repeat: no-repeat; background-position: right center; background-size: 32px 32px}
+.gridBox .gridView tbody .gridBodyDefault.btnCell button {display: inline-block; width: auto !important; height: 30px !important; padding: 0 10px; text-align: center; color: #ffffff; font-size: 14px; border: 1px solid #4c4c4c; border-radius: 2px; background: #4c4c4c}
+.gridBox .gridView tbody .gridBodyDefault.changed {background-color: #ffc2c2; transition: background-color 1s;}
+.gridBox .gridView tbody .gridBodyDefault.no {background: #fafafa}
+.gridBox .gridView tbody .gridBodyDefault.descMoreBtn		{vertical-align:top}
+.gridBox .gridView tbody .gridBodyDefault.descMoreBtn::after 	{content:"사유확인"; margin-top:11px; display: inline-block; width:auto !important; height:auto !important; min-width: 60px; padding: 3px 10px; text-align: center;  font-size: 16px; border: 1px solid #4c4c4c; border-radius: 2px; background: #fff}
+.gridBox .gridView tbody .gridBodyDefault.descMoreBtn .w2grid_textarea 	{width:0 !important; padding:0; line-height:55px; position:absolute;  transition: all .5s; overflow:hidden; right:110px; }
+.gridBox .gridView tbody .gridBodyDefault.descMoreBtn:focus .w2grid_textarea    {display:block;  background:#f0f0f0; width:calc(100% - 110px) !important; height:50px;  height:55px; }
+.gridBox .gridView tbody .w2grid_image {max-height: 50px;}
+
+.gridBox .gridView .grid_body_row:hover a {color: #703088; cursor: pointer; font-weight: 600 !important;}
+.gridBox .gridView td.gridBodyDefault.link a {color:#703088; cursor:pointer;}
+
+.gridBox .gridView .focusedTr,
+.gridBox .gridView .focusedTd { background-color: #f8f3fb !important; }
+
+.gridBodyDefault.btnBox a {display: inline-block; width:auto !important; height:auto !important; min-width: 60px; padding: 3px 10px; text-align: center;  font-size: 16px; border: 1px solid #4c4c4c; border-radius: 2px; background: #fff}
+
+.gridBox .gridTitle + .gridView {margin-top: 10px;}
+
+.btn {display: inline-block; min-width: 100px; padding: 7px 20px; text-align: center; color: #ffffff; font-size: 15px; border: 1px solid #333; border-radius: 3px; background: #333; vertical-align:middle}
+.btn.line { text-align: center; color: #4c4c4c; font-size: 16px; border: 1px solid #4c4c4c; border-radius: 2px; background: #fff}
+.btn.sm { min-width: 100px; padding: 4px 10px 3px; text-align: center;  font-size: 14px; border: 1px solid #333; border-radius: 3px;}
+.btn.xsm {min-width: 0; padding: 2px 6px; font-size: 12px; border: 1px solid #333; border-radius: 3px;}
+.btn.auto {min-width: 0;}
+.btn.block {min-width: 0; width: 100%;}
+.btn.fileDel {min-width: 10px; background:#fff; color:#4c4c4c; border:0; padding:0; margin-left:8px; }
+.btn.fileDel:after {content:"X";  display:inlein-block; min-width: 10px; margin:3px 0 3px 10px; padding: 2px 4px 0px; text-align: center; color: #ffffff; font-size: 14px; border: 1px solid #4c4c4c; border-radius: 2px; background:#4c4c4c; }
+.btn.fileDown {display: inline-block; min-width: 10px; padding: 0 30px 0 0; text-align: center; color: #000; font-size: 16px; border:0;  background:url(../imgs/common/ico_file.jpg) no-repeat 100% 50%;}
+.btn.fileDown2 {padding-right:50px; background:url(/common/admin/imgs/common/ico_down.png) no-repeat 93% 48% #4c4c4c;}
+.btnHelp {display: inline-block; vertical-align: middle; width: 20px; height: 20px; margin-left: 8px; font-size: 0; background: url('../imgs/common/ico_help.png') center center no-repeat;}
+
+.btn.w2anchor_disabled {background: #999999 !important; border-color: #999999;}
+
+
+.btn.pink {color: #ffffff; background: #ff3f90; border-color: #ff3f90}
+.btn.pinkline {color: #ff3f90; background: #ffffff; border-color: #ff3f90}
+.btn.gray {color: #ffffff; background: #999999; border-color: #999999;}
+.btn.blackline {color:#333;border:solid 1px #333;background:#fff;height:40px;line-height:25px;min-width:120px}
+
+.btnAddItem {display: inline-block; width: 30px; height: 30px; background: url('../imgs/common/sp_additem.png') 0 0 no-repeat;}
+.btnAddItem.plus {background-position: 0 0}
+.btnAddItem.minus {background-position: -30px 0}
+
+.btnDel {display: inline-block; width: 20px; height: 20px; font-size: 0; background: url('../imgs/common/ico_del.png') 0 0 no-repeat; background-size: cover;}
+.w2selectbox_native + .btnDel {vertical-align:middle; margin-left:10px; }
+
+.btnBox {overflow:hidden; width:100%; margin-top: 20px;}
+.btnBox.inBlock {display:inline-block; width:auto; margin:0; vertical-align:middle; }
+.btnBox.mt10 {margin-top: 10px;}
+.btnBox .fl {float:left; }
+.btnBox .fr {float:right; }
+.btnBox .btn ~ .btn {margin-left: 8px;}
+
+/* ANCHOR */
+.ancFile {padding-left: 25px; background: url('../imgs/common/ico_file.png') left center no-repeat;}
+
+/* pagination */
+.w2pageList {position: relative;width:100%; margin-top: 30px; text-align:center;}
+.w2pageList .w2pageList_ul li {display: inline-block; width: auto; height: auto; padding: 0 4px; vertical-align: top; background: #ffffff}
+.w2pageList .w2pageList_ul a {display: block; width: 36px; height: 36px;}
+.w2pageList .w2pageList_col_prev {margin-right: 40px}
+.w2pageList .w2pageList_col_next {margin-left: 40px;}
+.w2pageList_next_last .w2pageList_control_next  a,
+.w2pageList_pageNext_last .w2pageList_control_pageNext a,
+.w2pageList_prev_last .w2pageList_control_prev a,
+.w2pageList_pagePrev_last .w2pageList_control_pagePrev a {opacity: 0.5}
+.w2pageList .w2pageList_label,
+.w2pageList .w2pageList_control_label {display: inline-block; width: 36px; height: 36px; line-height: 36px; border: 0; border-radius: 100%}
+.w2pageList .w2pageList_label_selected{color: #fff; font-weight: normal; background: #2b2a63}
+.w2pageList .w2pageList_label.w2pageList_label_over {font-weight: bold; color: inherit;}
+
+.w2window .w2window_body .w2pageList .w2pageList_ul li {padding: 0; }
+.w2window .w2window_body .w2pageList .w2pageList_col_prev {margin-right: 10px}
+.w2window .w2window_body .w2pageList .w2pageList_col_next {margin-left: 10px;}
+
+/* 테이블 */
+
+.w2tb .w2tb_th.required .w2span::after {content: '*'; display: inline; margin-left: 4px;  color: #ff3f90; font-size: 16px;}
+
+.tableBox {margin-top: 20px}
+.tableBox.add {margin-top:-0}
+.tableBox.add .tableData {}
+
+.tableData {border: 1px solid #f0f0f0;}
+.tableData tbody tr:last-child {border-bototm: 0;}
+.tableData thead .w2tb_th {padding: 10px; color: #666666; text-align: center;}
+.tableData .w2tb_th {height: 40px; padding: 10px 0 10px 30px; text-align: left; color: #666666; font-size: 15px; font-weight: normal; border: 0; border-bottom: 1px solid #f0f0f0; background: #f7f7f7 }
+.tableData .w2tb_td {height: 40px; padding: 10px 10px 10px 10px; text-align: left; border: 0; border-bottom: 1px solid #f0f0f0}
+.tableData .w2tb_td .row * {vertical-align: middle;}
+.tableData .w2tb_td .row ~ .row {margin-top: 8px}
+.tableData .w2tb_td .col {display: inline-block}
+.tableData .w2tb_td .col ~ .col {margin-left: 8px;}
+.tableData .w2tb_th .w2span.bold		{color:#222;  }
+
+.tableList {border: 1px solid #f0f0f0;}
+.tableList tbody tr:last-child {border-bototm: 0;}
+.tableList thead .w2tb_th {padding: 10px; color: #666666; overflow: hidden; text-align: center;}
+.tableList .w2tb_th {height: 50px; padding: 10px 0 10px 30px; text-align: left; color: #666666; font-weight: normal; border: 0; border-bottom: 1px solid #f0f0f0; background: #f7f7f7 }
+.tableList .w2tb_td {height: 50px; padding: 10px 10px 10px 10px; text-align: left; border: 0; border-bottom: 1px solid #f0f0f0}
+.tableList .w2tb_td .row ~ .row {margin-top: 8px}
+.tableList .w2tb_td .col {display: inline-block}
+.tableList .w2tb_td .col ~ .col {margin-left: 8px;}
+.tableList .w2tb_th .w2span.bold		{color:#222;  }
+
+.tableData.ver .w2tb_th {text-align:center; padding:10px; }
+.tableData.ver .w2tb_td {text-align:center; padding:10px; }
+
+.txtInfo {margin-left: 8px; color: #999999; font-size: 14px;}
+p.txtInfo {margin-left: 0; margin-top: 8px; }
+
+.txtInfoBox {margin-top: 12px;}
+.txtInfoBox .txt {font-size: 14px;}
+.txtInfoBox .txt ~ .txt {margin-top: 4px}
+.txtInfoBox .txtInfo {margin: 0; color: #999999; font-size: 14px;}
+.txtInfoBox .txtInfo ~ .txtInfo {margin-top: 4px; }
+
+
+/* text 정렬 */
+.tal{text-align:left !important}
+.tac{text-align:center !important}
+.tar{text-align:right !important}
+
+
+/* 탭 */
+.tabbox {display: table; table-layout: fixed; width: 100%; height: 50px; margin-bottom: 50px; text-align: center; border: 1px solid #c5c6db;}
+.tabbox a {display: table-cell; position: relative; line-height: 50px; color: #8a8a8a; font-size: 15px; border-left: 1px solid #c5c6db;}
+.tabbox a:hover {text-decoration: none}
+.tabbox a:first-child {border-left: 0;}
+.tabbox a.active {position: relative; z-index: 1; margin: -1px 0; color: #fff; background-color: #313366;}
+/* 작업하기 짜증나서 일단 주석 .tabbox a.active::after {content: ''; position: absolute; left: 0; top: 0; width: 100%; height: 100%; margin: -1px; background: transparent; border: 1px solid #313366; } */
+
+.tabbox.auto {display: block; text-align: left; border: 0; border-bottom: 1px solid #c5c6db;}
+.tabbox.auto a {display: inline-block; padding: 10px 20px; line-height: 1.5; }
+
+.pageControl {margin-top: 30px; text-align: center;}
+.pageControl:after {display: block; clear:both; content: '';}
+.pageControl .btn ~ .btn {margin-left: 8px;}
+
+.imgUpdBox {display: inline-block; vertical-align: middle;}
+.imgUpdBox .inpFile {margin-top: 10px;}
+.imgUpdBox .inpAlt {margin-top: 10px;}
+.imgUpdBox .inpAlt .w2input {width: 100%;}
+
+/* 하단 가이드 */
+.guideBox	{background:#f9f9f9; padding:20px;margin-top:30px; }
+.guideBox .title	{font-size:16px; font-weight:bold; color:#666; padding-bottom:10px;}
+.guideBox .txt		{color:#666;font-size:126x;  }
+
+/* 약관 */
+.agreement {border:1px solid #d1d1d1; }
+.agreement .agreementBox { border-top: 1px solid #d1d1d1; }
+.agreement .agreementBox:first-child {border-top: 0;}
+.agreement .agreementTit {position:relative; }
+.agreement .agreementTit .txt {display: block; color: #121212; font-size:16px; padding:13px 15px; cursor:pointer;   }
+.agreement .agreementTit .txt:hover {color: #ff3f90;;}
+.agreement .agreementTit .txt:after {content:''; position: absolute; right: 15px; top: 19px; width: 21px; height: 12px; background:url(../imgs/common/faq_off.jpg) center center no-repeat;}
+.agreement .agreementTit .txt strong {display: inline-block;}
+.agreement .agreementTit .chk {position:absolute; top:14px; right:50px; }
+.agreement .agreementTit:first-child {border-top: 0;}
+.agreement .agreementBody {display: none;}
+.agreement .termsTit {position:relative; border-top: 1px solid #d1d1d1 !important }
+.agreement .termsTit .txt {display: block; color:#555555; font-size:14px; padding:10px 15px 10px 25px; cursor:pointer;   }
+.agreement .termsTit .txt:after{content:''; position: absolute; right: 15px; top: 15px; width: 18px; height: 10px; background:url(../imgs/common/faq_off.jpg) center center no-repeat; background-size: cover;}
+.agreement .termsTit .chk {position:absolute; top:9px; right:50px; }
+.agreement .agreementCont {display: none; height: 125px; padding:20px; background:#f4f4f4; overflow-y:auto; border-top: 1px solid #e1e1e1}
+
+span.dash {display:inline-block; padding:0 8px; }
+td .tdTxt {margin-top:10px; color:#666; }
+
+.brdView {}
+.brdView .brdCont {margin-bottom: -1px; padding: 20px; border: 1px solid #f0f0f0;}
+
+
+
+
+/* layout */
+.lyBox{display:table; table-layout: fixed; width:100%;position:relative}
+.lyCol{display:table-cell;padding:0 10px;margin:0; vertical-align: top; box-sizing:border-box;}
+.lyCol:first-child{padding-left:0 !important}
+.lyCol:last-child{padding-right:0 !important}
+.col2{width:20%}
+.col3{width:30%}
+.col4{width:40%}
+.col5{width:50%}
+.col6{width:60%}
+.col7{width:70%}
+.col8{width:80%}
+
+
+/* ==========================================================================
+	레이아웃
+========================================================================== */
+.wrap {}
+.container {position: absolute; left: 0; top: 72px; right: 0; bottom: 0; min-width: 1440px}
+
+/* MDI */
+.tac_layout {position:absolute; top:0; left:0; right:0; bottom:0; min-width: 1200px;}
+.tac_layout .w2tabcontrol_control.scroll {height:48px}
+.tac_layout .w2tabcontrol_control.scroll > .w2tabcontrol_tabhost {padding: 0 8px}
+.tac_layout .w2tabcontrol_control.scroll > .w2tabcontrol_tabhost li {top:8px; margin:0; border:0; height:40px; background:#cbcbcb; overflow:inherit}
+.tac_layout .w2tabcontrol_control.scroll > .w2tabcontrol_tabhost li:before {content:''; position:absolute; top:8px; left:0; display:block; width:1px; height:24px; background:#9f9f9f}
+.tac_layout .w2tabcontrol_control.scroll > .w2tabcontrol_tabhost li:last-child:after {content:''; position:absolute; top:8px; right:0; display:block; width:1px; height:24px; background:#9f9f9f}
+.tac_layout .w2tabcontrol_control.scroll > .w2tabcontrol_tabhost li:first-child:before,
+.tac_layout .w2tabcontrol_control.scroll > .w2tabcontrol_tabhost li.w2tabcontrol_selected + li:before {display:none}
+.tac_layout .w2tabcontrol_control.scroll > .w2tabcontrol_tabhost li.w2tabcontrol_selected {background:#f3f3f3; z-index:2}
+.tac_layout .w2tabcontrol_control.scroll > .w2tabcontrol_tabhost li:first-child {border-left:0}
+.tac_layout .w2tabcontrol_control.scroll > .w2tabcontrol_tabhost .w2tabcontrol_tab_center {overflow:inherit}
+.tac_layout .w2tabcontrol_control.scroll > .w2tabcontrol_tabhost li a {top:0; display:block; height:40px; padding:13px 35px 13px 20px; margin:0; line-height:1; font-size: 13px; -moz-box-sizing:border-box; box-sizing:border-box; z-index:2}
+.tac_layout .w2tabcontrol_control.scroll > .w2tabcontrol_tabhost li.w2tabcontrol_selected {}
+.tac_layout .w2tabcontrol_control.scroll > .w2tabcontrol_tabhost li.w2tabcontrol_selected a {color:#313366; background: #ffffff;}
+.tac_layout .w2tabcontrol_control.scroll > .w2tabcontrol_tabhost .w2tabcontrol_active a::after {display: none}
+.tac_layout > .w2tabcontrol_control {height:48px; background-color:#cbcbcb}
+.tac_layout .w2tabcontrol_control.scroll > .w2tabcontrol_tabhost {height:48px; z-index:1}
+.tac_layout > .w2tabcontrol_container {position:absolute; left:0; top:48px; right:0; bottom:0; margin-top: 0; border:none; float:none; height:auto !important; background:#f8f8f8 url(../imgs/common/ico_not_tab.png) no-repeat 50% 50%}
+.tac_layout > .w2tabcontrol_container > .w2tabcontrol_contents > .w2tabcontrol_contents_wrapper {position:absolute; left:0; right:0; top:0; bottom:0; height:auto !important; overflow:hidden; background:#fff; border:0; box-sizing:border-box}
+.tac_layout > .w2tabcontrol_container > .w2tabcontrol_contents > .w2tabcontrol_contents_wrapper.w2iframe{height:inherit !important}
+.tac_layout .w2tabcontrol_control.scroll > .w2tabcontrol_tabhost .w2tabcontrol_tab_left,
+.tac_layout .w2tabcontrol_control.scroll > .w2tabcontrol_tabhost .w2tabcontrol_tab_center,
+.tac_layout .w2tabcontrol_control.scroll > .w2tabcontrol_tabhost .w2tabcontrol_tab_right {background:none; z-index:3}
+.tac_layout .w2tabcontrol_control.scroll > .w2tabcontrol_tabhost .w2tabcontrol_tab_right {width:15px}
+/* mask */
+.tac_layout > .w2tabcontrol_control .mask {left:0; right:138px; margin-left:0; height:48px}
+.tac_layout > .w2tabcontrol_control .btn_scrollLeft {top:15px; right:118px; width:19px; height:19px; margin:0; background:url(../imgs/common/ico_tab_left.png) no-repeat 50% 50%}
+.tac_layout > .w2tabcontrol_control .btn_scrollRight {top:15px; right:96px; width:19px; height:19px; margin:0; background:url(../imgs/common/ico_tab_right.png) no-repeat 50% 50%}
+.tac_layout > .w2tabcontrol_control .btn_submenu {top:15px; right:74px; width:19px; height:19px; margin:0; background:url(../imgs/common/ico_tab_menu.png) no-repeat 50% 50%}
+.tac_layout > .w2tabcontrol_control .w2tabcontrol_tab_close {display:block !important; right:10px; left:auto; top:11px; width:17px; height:17px; background:none; border-radius:100%}
+.tac_layout > .w2tabcontrol_control .w2tabcontrol_tab_close:before {content:''; position:absolute; top:3px; left:8px; display:block; width:1px; height:11px; background:#9f9f9f; transform:rotate(45deg)}
+.tac_layout > .w2tabcontrol_control .w2tabcontrol_tab_close:after {content:''; position:absolute; top:3px; left:8px; display:block; width:1px; height:11px; background:#9f9f9f; transform:rotate(-45deg)}
+.tac_layout > .w2tabcontrol_control .w2tabcontrol_tab_close:hover {background:#e1e1e1}
+
+.btn_page_copy {display:inline-block; z-index:1; text-indent:-9999px; position:absolute; width:19px; height:19px; right:52px; top:15px; background:url(../imgs/common/ico_tab_copy.png) no-repeat 50% 50%; padding:0}
+.btn_close_all {display:inline-block; z-index:1; text-indent:-9999px; position:absolute; width:19px; height:19px; right:30px; top:15px; background:url(../imgs/common/ico_tab_closeall.png) no-repeat 50% 50%; padding:0}
+
+
+
+/* ==========================================================================
+	로그인
+========================================================================== */
+
+.loginForm {position: absolute; left: 50%; top: 50%; vertical-align: middle; width: 960px; margin: -200px 0 0 -480px; padding: 170px 0 0 373px; text-align: left; border-radius: 2px; background: #f3f3f3;border:solid 1px #ddd;height:400px}
+.loginForm .loginTitle {text-align: center;}
+.loginForm .loginTitle .loginTitLogo {position:absolute;left:289px;top:60px;width:382px;height:43px;background: url('../imgs/admin/tit_login.png') right 0 no-repeat; text-indent:-999em}
+.loginForm .loginTitle .ico-lock {position:absolute;left:190px;top:160px;width:144px;height:144px;background: url('../imgs/common/ico_login2.png') right 0 no-repeat; text-indent:-999em}
+
+.loginForm .loginField {position: relative; margin: 0 202px 0 0; padding-right: 85px;}
+.loginForm .loginField .w2input {width: 100%; margin-top: 12px; font-size:15px}
+.loginForm .loginField .w2input:first-child {margin: 0}
+.loginForm .loginField .btnLogin {position: absolute; right: 0; top: 0; width: 70px; height: 71px; line-height: 70px; text-align: center; color: #ffffff; font-size: 15px; border-radius: 5px; background: #e2007e; border:0}
+.loginForm .loginSave {margin: 12px 100px 0 0; line-height: 1}
+.loginForm .loginSupport {margin: 20px 202px 0 0}
+.loginForm .loginSupport .row {overflow: hidden; margin-top: 12px}
+.loginForm .loginSupport .row:first-child {margin-top: 0;}
+.loginForm .loginSupport .text {float: left; padding-left: 10px; color: #999999; font-size: 14px; background: url('../imgs/common/bul_square_gray.png') left 9px no-repeat;} /*210122 수정*/
+.loginForm .loginSupport .supportPointTxt {color: #ff4090;} /*210122 추가*/
+.loginForm .loginSupport .link {text-align: center;}
+.loginForm .loginSupport .link a {padding:0 20px;position:relative; color:#666;font-size: 12px; background: url('') right center no-repeat;}
+.loginForm .loginSupport .link a ~ a::before{content:'';position:absolute;left:0;top:4px;width:1px;height:12px;background:#ddd}
+
+.memContainer {position: fixed; top: 90px; right: 0; bottom: 0; left: 0; background: #f5f5f5; overflow: hidden}
+
+.memberContent {width: 1020px; margin: 0 auto; }
+.memberContent .memberForm {padding: 50px; background: #ffffff;}
+.memberContent .memberForm .memType {padding-top: 20px; border-top: 1px solid #e6e6e6;}
+.memberContent .memberForm .fieldTitle {padding: 70px 0 20px;}
+.memberContent .memberForm .fieldTitle:first-child {padding-top: 0}
+.memberContent .memberForm .fieldTitle + .tableBox {margin: 0}
+.memberContent .memberForm .completeText {padding: 50px 0 70px; text-align: center;}
+.memberContent .memberForm .completeText strong {color: #ff3f90;}
+
+
+/* ==========================================================================
+	업로드
+========================================================================== */
+.apndImgeBox {}
+.apndImgeBox:after {display: block; clear: both; content: '';}
+.apndImgeBox .imgeBox {display: inline-block;}
+.apndImgeBox .imgeBox img {max-width: 100%}
+.apndImgeBox .imgeView {position: relative;}
+.apndImgeBox .imgeView .btnDel {position: absolute; right: 10px; top: 10px;}
+.apndImgeBox .imgeAlt {width: 100%;}
+.apndImgeBox .imgeAlt .w2input {width: 100% !important}
+
+.apndDocuBox {display: inline-block; margin-left: 10px; vertical-align: middle;}
+.apndDocuBox .docuBox {}
+.apndDocuBox .docuItem {display: inline-block; margin-left: 10px;}
+.apndDocuBox .docuItem:first-child {margin-left: 0;}
+.apndDocuBox .btnDel {margin-left: 4px;}
+
+
+.apndForm {display: inline-block;}
+.apndForm .btn_file {position: relative; display: inline-block;}
+.apndForm .btn_file {position:absolute;left:20;top:10;width:100%;height:23px;}
+
+.apndForm * {vertical-align: top}
+.apndForm .apndCtrls {display: inline-block;}
+.apndForm .apndCtrls .w2upload {margin-right: 4px; padding-right: 30px;}
+.apndForm .apndCtrls .w2upload_input {width: 100% !important;}
+
+.apndForm .apndFileList {float: right; min-height: 60px; margin: 10px 0 0; border: 1px solid #d3dbe3}
+.apndForm .apndFileList li {position: relative; padding: 5px 10px; line-height: 30px; overflow: hidden}
+.apndForm .apndFileList li::nth-child(2n+1) {background-color: #f4f4f4;}
+.apndForm .apndFileList .apndFileNm {float: left}
+.apndForm .apndFileList .btn {float: right}
+/* .apndForm .apndCtrls {padding: 10px; background-color: #f4f4f4;}
+.apndForm .apndCtrls .w2upload {width: 100% !important; padding-right: 30px;}
+.apndForm .apndCtrls .w2upload_input {width: 100% !important;}
+.apndForm .apndFileList {min-height: 60px; margin: 10px 0 0; border: 1px solid #d3dbe3}
+.apndForm .apndFileList li {position: relative; padding: 5px 10px; line-height: 30px; overflow: hidden}
+.apndForm .apndFileList li::nth-child(2n+1) {background-color: #f4f4f4;}
+.apndForm .apndFileList .apndFileNm {float: left}
+.apndForm .apndFileList .btn {float: right} */
+
+.apndImgeBox + .apndForm {margin-top: 10px}
+
+
+/* ==========================================================================
+	Generator Contents
+========================================================================== */
+
+.genContainer {margin-top: 20px;}
+.genContent ~ .genContent {margin-top: 20px}
+.genContent .genTitle {position: relative; padding: 18px; background: #e0e0e0;}
+.genContent .genTitle .title {padding-left: 16px; line-height: 20px; font-size: 16px; background: url('../imgs/common/bul_gen_chev.png') left center no-repeat;}
+.genContent .genTitle .btnDelete {position: absolute; right: 30px; top: 50%; margin-top: -10px; padding-left: 28px; line-height: 20px; background: url('../imgs/common/ico_gen_delete.png') left center no-repeat;}
+.genContent .tableBox {margin-top: 0;}
+
+
+
+/* ==========================================================================
+	운영자관리
+========================================================================== */
+
+
+.userSvcList {margin-top: 10px;}
+.userSvcList li {margin-top: 5px;}
+.userSvcList li:first-child {margin: 0}
+.userSvcList .svcNm {margin-right: 10px;}
+
+
+/* 접속제한안내 */
+.access-container{background:#f6f6f6 url('../imgs/admin/ico_access.png') 50% 94px no-repeat;width:960px;height:412px;margin:0 auto;position:relative;top:50%;margin-top:-206px}
+.access-container .tit-txt{text-align:center;font-size:28px;font-weight:700;color:#333;padding-top:179px}
+.access-container .sub-txt{text-align:center;font-size:16px;color:#666;margin-top:7px}
+.access-container .time-dt{text-align:center;font-size:14px;color:#666;margin-top:25px}
+.access-container .time-dd{text-align:center;font-size:14px;color:#0b5de3}

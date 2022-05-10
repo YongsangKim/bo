@@ -1,0 +1,792 @@
+[
+  {
+    "category": "로그인/회원가입",
+    "folder": "member",
+    "date": "",
+    "menus": [
+      {
+        "name": "로그인",
+        "url": "login.xml",
+        "memo": "",
+        "modify": ""
+      },
+      {
+        "name": "아이디찾기",
+        "url": "popFindId.xml",
+        "memo": "",
+        "modify": ""
+      },
+      {
+        "name": "아이디찾기 결과",
+        "url": "popFindIdResult.xml",
+        "memo": "",
+        "modify": ""
+      },
+      {
+        "name": "비밀번호찾기",
+        "url": "popFindPw.xml",
+        "memo": "",
+        "modify": ""
+      },
+      {
+        "name": "비밀번호찾기 결과",
+        "url": "popFindPwResult.xml",
+        "memo": "",
+        "modify": ""
+      },
+      {
+        "name": "회원가입",
+        "url": "join.xml",
+        "memo": "",
+        "modify": ""
+      },
+      {
+        "name": "회원가입완료",
+        "url": "joinComplete.xml",
+        "memo": "",
+        "modify": ""
+      },
+      {
+        "name": "팝업_SMS인증",
+        "url": "popCertBySms.xml",
+        "memo": "",
+        "modify": ""
+      }
+    ]
+  },
+  {
+    "category": "공통서비스 관리",
+    "folder": "comm",
+    "date": "2019.11.00, 2019.12.13, 2019.12.27, 2020.01.08",
+    "menus": [
+      {
+      	"status": "",
+        "name": "공통코드관리 - 대분류코드 관리",
+        "url": "BO_CD_001.xml",
+        "memo": "",
+        "modify": ""
+      },
+      {
+      	"status": "",
+        "name": "공통코드관리 - 소분류코드 관리 등록",
+        "url": "BO_CD_002.xml",
+        "memo": "",
+        "modify": ""
+      },
+      {
+      	"status": "",
+        "name": "공통코드관리 - 소분류코드 관리",
+        "url": "BO_CD_003.xml",
+        "memo": "",
+        "modify": ""
+      },
+      {
+      	"status": "",
+        "name": "공통코드관리 - 소분류코드 관리 등록",
+        "url": "BO_CD_004.xml",
+        "memo": "",
+        "modify": ""
+      },
+      {
+      	"status": "",
+        "name": "운영자관리 - 사용자관리",
+        "url": "BO_IDA_001.xml",
+        "memo": "",
+        "modify": ""
+      },
+      {
+      	"status": "",
+        "name": "운영자관리 - 사용자관리 팝업",
+        "url": "BO_IDA_POP_001.xml",
+        "memo": "",
+        "modify": ""
+      },
+      {
+      	"status": "",
+        "name": "권한관리 목록",
+        "url": "BO_IDA_005.xml",
+        "memo": "",
+        "modify": ""
+      },
+      {
+      	"status": "",
+        "name": "권한관리 등록",
+        "url": "BO_IDA_007.xml",
+        "memo": "",
+        "modify": ""
+      }
+    ]
+  },
+  {
+    "category": "홈페이지 관리",
+    "folder": "hpg",
+    "date": "2019-12-02, 2019-12-12",
+    "menus": [
+	  {
+		"status": "",
+        "name": "메인 - 배너관리 (메인/탑/하단 배너) 탭",
+        "url": "BO_HOME_003.xml",
+        "memo": "BO_HOME_003.xml",
+		"modify": ""
+      },
+	  {
+		"status": "",
+        "name": "메인 - 배너관리 등록",
+        "url": "BO_HOME_004.xml",
+		"memo": "",
+        "modify": ""
+      },
+	  {
+		"status": "",
+        "name": "메인 - 서비스 태그 관리 목록",
+        "url": "BO_HOME_005.xml",
+		"memo": "",
+        "modify": ""
+      },
+	  {
+		"status": "",
+        "name": "메인 - 서비스 태그 관리 등록",
+        "url": "BO_HOME_006.xml",
+		"memo": "",
+        "modify": ""
+      },
+	  {
+		"status": "",
+        "name": "메인 - 서비스 카드 관리",
+        "url": "BO_HOME_007.xml",
+		"memo": "",
+        "modify": ""
+      },
+	  {
+		"status": "",
+        "name": "메인 - 컨텐츠 관리",
+        "url": "BO_HOME_008.xml",
+		"memo": "",
+        "modify": ""
+      },
+	  {
+		"status": "",
+        "name": "메인 - 활용사례 관리 목록",
+        "url": "BO_HOME_009.xml",
+		"memo": "",
+        "modify": ""
+      },
+	  {
+		"status": "",
+        "name": "메인 - 팝업 관리 목록",
+        "url": "BO_HOME_013.xml",
+		"memo": "",
+        "modify": ""
+      },
+	  {
+		"status": "",
+        "name": "메인 - 팝업 관리 등록",
+        "url": "BO_HOME_014.xml",
+		"memo": "",
+        "modify": ""
+      },
+	  {
+		"status": "",
+        "name": "메인 - GA코드 관리",
+        "url": "BO_HOME_012.xml",
+		"memo": "",
+        "modify": ""
+      },
+	  {
+		"status": "",
+        "name": "메인 - 약관관리 목록",
+        "url": "BO_HOME_015.xml",
+		"memo": "",
+        "modify": ""
+      },
+	  {
+		"status": "",
+        "name": "메인 - 약관관리 등록",
+        "url": "BO_HOME_016.xml",
+		"memo": "",
+        "modify": ""
+      },
+	  {
+		"status": "",
+        "name": " 서브메인 - 메인배너 목록",
+        "url": "SER_GW_0101.xml",
+		"memo": "",
+        "modify": ""
+      },
+	  {
+		"status": "",
+        "name": " 서브메인 - 메인배너 등록",
+        "url": "SER_GW_0102.xml",
+		"memo": "",
+        "modify": ""
+      },
+	  {
+		"status": "",
+        "name": "서브메인 - 이벤트배너 목록",
+        "url": "SER_GW_0202.xml",
+		"memo": "",
+        "modify": ""
+      },
+	  {
+		"status": "",
+        "name": "서브메인 - 이벤트배너 등록",
+        "url": "SER_GW_0203.xml",
+		"memo": "",
+        "modify": ""
+      },
+	  {
+		"status": "",
+        "name": "서브메인 - 컨텐츠관리 목록",
+        "url": "SER_GW_0301.xml",
+		"memo": "",
+        "modify": ""
+      },
+	  {
+		"status": "",
+        "name": "서브메인 - 컨텐츠관리 등록",
+        "url": "SER_GW_0302.xml",
+        "memo": "",
+        "modify": ""
+      }
+    ]
+  },
+  {
+    "category": "CS관리",
+    "folder": "cs",
+    "date": "2019-11-28",
+    "menus": [
+	  {
+		"status": "",
+        "name": "회원관리 - 회원정보 목록",
+        "url": "BOCUST001.xml",
+        "memo": "",
+        "modify": ""
+      },
+	  {
+		"status": "",
+        "name": "회원관리 - 회원정보 상세",
+        "url": "BOCUST002.xml",
+        "memo": "",
+        "modify": ""
+      },
+	  {
+		"status": "",
+        "name": "회원관리 - 회원정보 수정",
+        "url": "BOCUST003.xml",
+        "memo": "",
+        "modify": ""
+      },
+	  {
+		"status": "",
+        "name": "회원관리 - 가입 상품 조회",
+        "url": "BOCUST004.xml",
+        "memo": "",
+        "modify": ""
+      },
+	  {
+		"status": "",
+        "name": "회원관리 - 회원정보 변경 요청 탭 - 조회",
+        "url": "BOCUST005.xml",
+        "memo": "",
+        "modify": ""
+      },
+	  {
+		"status": "",
+        "name": "회원관리 - 회원정보 변경 요청 탭 - 수정 ",
+        "url": "BOCUST006.xml",
+        "memo": "",
+        "modify": ""
+      },
+	  {
+		"status": "",
+        "name": "회원관리 - 온라인 문의 이력 탭 ",
+        "url": "BOCUST007.xml",
+        "memo": "",
+        "modify": ""
+      },
+	  {
+		"status": "",
+        "name": "온라인 문의 - 목록",
+        "url": "BOONL001.xml",
+        "memo": "",
+        "modify": ""
+      },
+	  {
+		"status": "",
+        "name": "온라인 문의 - 상세",
+        "url": "BOONL002.xml",
+        "memo": "",
+        "modify": ""
+      },
+	  {
+		"status": "",
+        "name": "온라인 문의 - 수정",
+        "url": "BOONL003.xml",
+        "memo": "",
+        "modify": ""
+      },
+	  {
+		"status": "",
+        "name": "견적문의 관리",
+        "url": "BOEST001.xml",
+        "memo": "",
+        "modify": ""
+      },
+      {
+		"status": "",
+        "name": "견적문의 관리 - 답변등록, 견적서 발송",
+        "url": "BOEST002.xml",
+        "memo": "",
+        "modify": ""
+      },
+      {
+		"status": "",
+        "name": "메일 발송 내역",
+        "url": "BOEDM001.xml",
+        "memo": "",
+        "modify": ""
+      },
+      {
+		"status": "",
+        "name": "SMS 발송 내역",
+        "url": "BOSMS001.xml",
+        "memo": "",
+        "modify": ""
+      },
+      {
+		"status": "",
+        "name": "메일 수신거부",
+        "url": "BOMAIL001.xml",
+        "memo": "",
+        "modify": ""
+      },
+      {
+		"status": "",
+        "name": "데모체험 신청",
+        "url": "BODEMO001.xml",
+        "memo": "",
+        "modify": ""
+      },
+      {
+		"status": "",
+        "name": "회원 탈퇴",
+        "url": "BODRW001.xml",
+        "memo": "",
+        "modify": ""
+      }
+  	]
+  },
+  {
+    "category": "청약관리",
+    "folder": "biz",
+    "date": "2019-11-22",
+    "menus": [
+      {
+		"status": "",
+        "name": "현황판",
+        "url": "APP_001.xml",
+        "memo": "",
+        "modify": ""
+      },
+      {
+      	"status": "",
+        "name": "청약전체 목록",
+        "url": "APP_002.xml",
+        "memo": "",
+        "modify": "2019-11-26"
+      },
+      {
+      	"status": "",
+        "name": "청약대기 목록",
+        "url": "APP_003.xml",
+        "memo": "",
+        "modify": ""
+      },
+      {
+      	"status": "",
+        "name": "청약대기 조회/수정",
+        "url": "APP_004.xml",
+        "memo": "",
+        "modify": "2019-11-26"
+      },
+      {
+      	"status": "",
+        "name": "서비스개통완료 목록",
+        "url": "APP_005.xml",
+        "memo": "",
+        "modify": ""
+      },
+      {
+      	"status": "",
+        "name": "서비스개통완료 조회/수정",
+        "url": "APP_006.xml",
+        "memo": "",
+        "modify": "2019-11-26"
+      },
+      {
+      	"status": "",
+        "name": "가입완료 목록",
+        "url": "APP_007.xml",
+        "memo": "",
+        "modify": "2019-11-26"
+      },
+      {
+      	"status": "",
+        "name": "가입완료 청약정보 조회/수정",
+        "url": "APP_008.xml",
+        "memo": "",
+        "modify": "2019-11-26"
+      },
+      {
+      	"status": "",
+        "name": "가입완료 청구/납부 내역 조회",
+        "url": "APP_009.xml",
+        "memo": "",
+        "modify": ""
+      },
+      {
+      	"status": "",
+        "name": "청약정보변경 이력관리",
+        "url": "APP_010.xml",
+        "memo": "",
+        "modify": ""
+      },
+      {
+      	"status": "",
+        "name": "가입취소 목록",
+        "url": "APP_011.xml",
+        "memo": "",
+        "modify": "2019-11-26"
+      },
+      {
+      	"status": "",
+        "name": "가입취소 조회",
+        "url": "APP_012.xml",
+        "memo": "",
+        "modify": "2019-11-26"
+      },
+      {
+      	"status": "",
+        "name": "결합할인 선택(팝업)",
+        "url": "SER_POP_001.xml",
+        "memo": "",
+        "modify": ""
+      },
+      {
+      	"status": "",
+        "name": "일시정지 신청(팝업)",
+        "url": "APP_POP_002.xml",
+        "memo": "",
+        "modify": ""
+      },
+      {
+      	"status": "",
+        "name": "일시정지 해지 신청(팝업)",
+        "url": "APP_POP_003.xml",
+        "memo": "",
+        "modify": "2019-11-26"
+      },
+      {
+      	"status": "",
+        "name": "직권중지 신청(팝업)",
+        "url": "APP_POP_004.xml",
+        "memo": "",
+        "modify": ""
+      },
+      {
+      	"status": "",
+        "name": "서비스 해지 신청(팝업)",
+        "url": "APP_POP_005.xml",
+        "memo": "",
+        "modify": ""
+      },
+      {
+      	"status": "",
+        "name": "상품변경(팝업)",
+        "url": "APP_POP_001.xml",
+        "memo": "",
+        "modify": ""
+      },
+      {
+      	"status": "",
+        "name": "계정수 변경(팝업)",
+        "url": "APP_POP_006.xml",
+        "memo": "",
+        "modify": "2019-11-26"
+      },
+      {
+      	"status": "",
+        "name": "부가서비스 변경(팝업)",
+        "url": "APP_POP_007.xml",
+        "memo": "",
+        "modify": ""
+      },
+      {
+      	"status": "",
+        "name": "납부정보 변경(팝업)",
+        "url": "APP_POP_008.xml",
+        "memo": "",
+        "modify": ""
+      },
+      {
+      	"status": "",
+        "name": "청약정보 변경 상세(팝업)",
+        "url": "APP_POP_009.xml",
+        "memo": "",
+        "modify": ""
+      },
+      {
+    	  "status": "",
+    	  "name": "청약변경관리_연납변경(팝업)",
+    	  "url": "APP_POP_016.xml",
+    	  "memo": "",
+    	  "modify": ""
+      }
+    ]
+  },
+  {
+    "category": "서비스관리",
+    "folder": "service",
+    "date": "2019-11-15, 2019-12-12, 2019-12-26",
+    "menus": [
+      {
+      	"status": "",
+        "name": "서비스 관리",
+        "url": "SER_PRO_000.xml",
+        "memo": "",
+        "modify": "2019-12-24"
+      },
+      {
+      	"status": "",
+        "name": "상품 관리",
+        "url": "SER_PRO_003.xml",
+        "memo": "",
+        "modify": "2019-12-24"
+      },
+      {
+      	"status": "",
+        "name": "부가 상품 관리",
+        "url": "SER_PRO_005.xml",
+        "memo": "",
+        "modify": "2019-12-26"
+      },
+      {
+      	"status": "",
+        "name": "부가 상품 속성 관리",
+        "url": "SER_PRO_006.xml",
+        "memo": "",
+        "modify": "2019-12-26"
+      },
+      {
+      	"status": "",
+        "name": "솔루션 서버 등록 팝업",
+        "url": "SER_POP_001.xml",
+        "memo": "",
+        "modify": "2019-12-26"
+      },
+      {
+      	"status": "",
+        "name": "상품 노출 순서변경 팝업",
+        "url": "SER_POP_002.xml",
+        "memo": "",
+        "modify": "2019-12-26"
+      },
+      {
+      	"status": "",
+        "name": "부가상품 속성 복사 팝업",
+        "url": "SER_POP_003.xml",
+        "memo": "",
+        "modify": "2019-12-26"
+      },
+      {
+      	"status": "",
+        "name": "부가상품 선택 팝업",
+        "url": "SER_POP_004.xml",
+        "memo": "",
+        "modify": "2019-12-26"
+      },
+      {
+      	"status": "",
+        "name": "신청정보 순서변경 팝업",
+        "url": "SER_POP_005.xml",
+        "memo": "",
+        "modify": "2019-12-26"
+      },
+      {
+      	"status": "",
+        "name": "신청정보 순서변경(부가상품) 팝업",
+        "url": "SER_POP_006.xml",
+        "memo": "",
+        "modify": "2019-12-26"
+      }
+    ]
+  },
+  {
+    "category": "게시판관리",
+    "folder": "brd",
+    "date": "2019-11-26",
+    "menus": [
+      {
+        "status": "",
+        "name": "메인설정",
+        "url": "BOEVE001.xml",
+        "memo": "",
+        "modify": ""
+      },
+      {
+        "status": "",
+        "name": "메인설정 등록",
+        "url": "BOEVE002.xml",
+        "memo": "",
+        "modify": ""
+      },
+      {
+        "status": "",
+        "name": "이벤트 목록",
+        "url": "BOEVE003.xml",
+        "memo": "",
+        "modify": ""
+      },
+      {
+        "status": "",
+        "name": "이벤트 등록",
+        "url": "BOEVE004.xml",
+        "memo": "",
+        "modify": ""
+      },
+      {
+        "status": "",
+        "name": "메인배너 우선순위 관리",
+        "url": "BOEVEPOP001.xml",
+        "memo": "",
+        "modify": ""
+      },
+      {
+        "status": "",
+        "name": "공지사항 목록",
+        "url": "BONOT001.xml",
+        "memo": "",
+        "modify": ""
+      },
+      {
+        "status": "",
+        "name": "공지사항 등록",
+        "url": "BONOT002.xml",
+        "memo": "",
+        "modify": ""
+      },
+      {
+        "status": "",
+        "name": "보도자료 목록",
+        "url": "BOPR001.xml",
+        "memo": "",
+        "modify": ""
+      },
+      {
+        "status": "",
+        "name": "보도자료 등록",
+        "url": "BOPR002.xml",
+        "memo": "",
+        "modify": ""
+      },
+      {
+        "status": "",
+        "name": "자료다운로드 목록",
+        "url": "BODWN001.xml",
+        "memo": "",
+        "modify": ""
+      },
+      {
+        "status": "",
+        "name": "자료다운로드 등록",
+        "url": "BODWN002.xml",
+        "memo": "",
+        "modify": ""
+      },
+      {
+        "status": "",
+        "name": "자주하는질문 목록",
+        "url": "BOFAQ001.xml",
+        "memo": "",
+        "modify": ""
+      },
+      {
+        "status": "",
+        "name": "자주하는질문 등록",
+        "url": "BOFAQ002.xml",
+        "memo": "",
+        "modify": ""
+      },
+      {
+        "status": "",
+        "name": "대리점판매정보 목록",
+        "url": "BOASP001.xml",
+        "memo": "",
+        "modify": ""
+      },
+      {
+        "status": "",
+        "name": "대리점판매정보 조회",
+        "url": "BOASP002.xml",
+        "memo": "",
+        "modify": ""
+      },
+      {
+        "status": "",
+        "name": "대리점판매정보 등록",
+        "url": "BOASP003.xml",
+        "memo": "",
+        "modify": ""
+      },
+      {
+        "status": "",
+        "name": "활용사례 목록",
+        "url": "BOUSE001.xml",
+        "memo": "",
+        "modify": ""
+      },
+      {
+        "status": "",
+        "name": "활용사례 등록",
+        "url": "BOUSE002.xml",
+        "memo": "",
+        "modify": ""
+      }
+    ]
+  },
+  {
+    "category": "통계관리",
+    "folder": "stats",
+    "date": "2020-02-04",
+    "menus": [
+      {
+        "status": "",
+        "name": "청약통계",
+        "url": "BO_STA_001.xml",
+        "memo": "",
+        "modify": ""
+      },
+	  {
+        "status": "",
+        "name": "상담통계",
+        "url": "BO_STA_002.xml",
+        "memo": "",
+        "modify": ""
+      },
+	  {
+        "status": "",
+        "name": "회원통계",
+        "url": "BO_STA_004.xml",
+        "memo": "",
+        "modify": ""
+      },
+	  {
+        "status": "",
+        "name": "서비스 해지 통계",
+        "url": "BO_STA_005.xml",
+        "memo": "",
+        "modify": ""
+      }
+    ]
+  }
+]

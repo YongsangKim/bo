@@ -1,0 +1,107 @@
+/* ==========================================================================
+	에러페이지
+========================================================================== */
+.error {position: fixed; height: 100%; width: 100%; background: #fff;}
+.error .errorArea {display: table; height: 100%; width: 600px; margin: 0 auto;}
+.error .errorCont {display: table-cell; height: 100%; vertical-align: middle; text-align: center; word-break: keep-all}
+.error .errorCont .icon {margin-bottom: 40px}
+.error .errorCont .title {font-size: 28px;}
+.error .errorCont .text {margin-top: 15px; font-size: 18px;}
+.error .errorCont .btnHome {margin-top: 40px;}
+.error .errorCont .schedule {margin-top: 55px; padding: 25px 0; font-size: 18px; border-top: 2px solid #121212; border-bottom: 1px solid #d1d1d1;}
+
+/* ==========================================================================
+	로그인/회원가입
+========================================================================== */
+
+/* 아이디찾기 */
+.popFindInfo {}
+.popFindInfo .findForm {margin-top: 30px;}
+.popFindInfo .findForm .w2tb .w2tb_th,
+.popFindInfo .findForm .w2tb .w2tb_td { height: 42px; padding: 6px 0; border: 0; }
+.popFindInfo .findForm .w2tb .w2tb_th {text-align: left; color: #333; font-weight: normal; background: none}
+
+.popFindInfo .findIdResult .findUserList {margin-top: 30px; padding: 24px 0; text-align: center; border: 1px solid #e6e6e6; border-radius: 2px; background: #f5f5f5}
+.popFindInfo .findIdResult .findUserList p {padding: 4px 0; line-height: 1;}
+.popFindInfo .findIdResult .findUserList + p {margin-top: 12px; color: #999999; font-size: 14px;}
+.popFindInfo .findPwResult .email {color: #ff3f90; font-width: normal;}
+
+/* SMS 인증 */
+.popCertSms {}
+.popCertSms .certForm {margin-top: 30px}
+.popCertSms .certForm .field ~ .field {margin-top: 12px;}
+.popCertSms .certForm .memInfo {display: inline-block; width: 272px; padding: 2px 0; color: #4c4c4c; border: 1px solid #e6e6e6; border-radius: 2px; background: #f5f5f5;}
+.popCertSms .certForm .memInfo .w2textbox {margin-left: 14px;}
+.popCertSms .certForm .w2input {width: 272px;}
+.popCertSms .certForm .btn {width: 140px; margin-left: 8px;}
+
+.th_disc {font-size:13px; color:#999 }
+
+
+/* ==========================================================================
+	서비스관리
+========================================================================== */
+
+/* 서비스관리 - 상품관리 */
+.genOptRow {}
+.genOptRow .addOptRow ~ .addOptRow {margin-top: 8px;}
+.genOptRow .addOptRow * {vertical-align: middle}
+.genOptRow .addOptRow .btnAddItem {display: none; margin-left: 10px}
+
+.genOptRow .addOptRow:first-child .btnAddItem.plus {display: inline-block}
+.genOptRow .addOptRow:not(:first-child) .btnAddItem.minus {display: inline-block}
+
+
+/* ==========================================================================
+	청약관리
+========================================================================== */
+
+/*  메모  :  댓글 형식 */
+.memoForm				{margin-top:100px;   }
+.memoForm .status			{background:#e0e0e0; padding:10px 20px;  }
+.memoForm .formBox		{background:#f7f7f7; padding:20px; overflow:hidden;  position:relative; margin:0 0 30px;  border: 1px solid #f0f0f0   }
+.memoForm .formBox .row {position: relative;}
+.memoForm .formBox .row ~ .row {margin-top: 10px;}
+.memoForm .formBox .w2textarea		{width:calc(100% - 140px);  }
+.memoForm .formBox .btn					{position:absolute; right:20px; top:0px; height:100px; line-height:80px;}
+
+/*   */
+.statusBox {position: relative; padding: 20px; background: #f4f4f4; border: 1px solid #f0f0f0}
+.statusBox .w2tb {width: auto; border :0;}
+.statusBox .w2tb tbody th,
+.statusBox .w2tb tbody td {padding: 0 10px 0 0; text-align: left; border: 0; background: none;}
+.statusBox .util {position: absolute; right: 20px; top: 50%; transform: translateY(-50%);}
+
+
+/* ==========================================================================
+	회원관리
+========================================================================== */
+
+/* 관리자 수정 이력 ( pageControl에 있는거 ) */
+.custMngHist {position: relative; float: left; text-align: left}
+.custMngHist * {vertical-align: middle;}
+.custMngHist .w2textbox {margin-top: 4px;}
+.custMngHist .w2textbox:first-child {margin-top: 0;}
+.custMngHist .lbl {margin-right: 8px;}
+.custMngHist .btnMore {display: inline-block; width: 20px; height: 20px; margin-left: 8px; font-size: 0; background: url('../imgs/common/ico_help.png') center center no-repeat;}
+.custMngHist .histText {padding: 8px 0; color: #666666}
+.custMngHist .histList {display :none; overflow-y:auto; position: absolute; left: 0; bottom: 40px; width: 100%; height: 288px; padding: 20px; color: #666666; font-size: 14px; border: 1px solid #e5e5e5; border-radius: 2px; background: #ffffff;}
+.custMngHist .histList {box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.15);}
+
+.custHistList {border-top: 1px solid #252525;}
+.custHistList a {display: block; padding: 12px 10px 10px;}
+.custHistList a:hover {text-decoration: underline;}
+.custHistList li {position: relative; border-bottom: 1px solid #f0f0f0;}
+.custHistList li:after {content:''; display: none; position: absolute; right: 10px; top: 50%; width: 8px; height: 14px; margin-top: -7px; background: url('../imgs/common/bul_gen_chev.png') center center no-repeat;}
+.custHistList li.active::after {display: block;}
+
+.custHistDetl {margin: 0;}
+.custHistDetl .tableData ~ .tableData {margin-top: 20px}
+
+/* ==========================================================================
+	내정보관리
+========================================================================== */
+
+/* 내정보관리 - 변경처리폼 */
+.chgMyinfoFrm {margin-top: 10px;}
+.chgMyinfoFrm .btnBox {margin-top: 10px;}
